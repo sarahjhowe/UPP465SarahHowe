@@ -40,18 +40,23 @@
 
 <script>	
 
-var mymap = L.map('map').setView([41.86, -87.66,], 13);
+var map = L.map('map').setView([41.86, -87.66,], 13);
+	
 var Stamen_TonerLite = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.{ext}', {
 	        attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> 
 	        subdomains: 'abcd',
 	        minZoom: 0,
 	        maxZoom: 20,
 	        ext: 'png'
-	}).addTo(mymap);
-var marker = L.marker([41.86,-87.66],).addTo(mymap).bindPopup("Hideout");
-var polygon = L.polygon([[41.22,-87.22],[41.50,-87.50],[41.80,-87.08]],),{ color:'purple',fillColor:'green', fillOpacity:.15,}).addTo(mymap);
-var line = L.polyline([[41.86,87.66], [41.33,87.33], [41.70,87.12]],).addTo(mymap);
-var circle = L.circle([41.69,87.69],).addTo(mymap);
+	}).addTo(map);
+	
+var marker = L.marker([41.86,-87.66],).addTo(map).bindPopup("Hideout");
+	
+var polygon = L.polygon([[41.22,-87.22],[41.50,-87.50],[41.80,-87.08]],),{ color:'purple',fillColor:'green', fillOpacity:.15,}).addTo(map);
+	
+var line = L.polyline([[41.86,87.66], [41.33,87.33], [41.70,87.12]],).addTo(map);
+	
+var circle = L.circle([41.69,87.69],).addTo(map);
 	
 
 </script>
