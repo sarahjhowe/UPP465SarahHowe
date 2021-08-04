@@ -4,19 +4,19 @@
 } 
 
 .intro h1 {
-	font-family: 'Libre Baskerville', sans-serif;
+	font-family: 'Libre Baskerville', serif;
 	text-align: left;
 	font-size: 40pt;
 } 
 
 .intro h3 {
-	font-family: 'Libre Baskerville', sans-serif;
+	font-family: 'Libre Baskerville', serif;
 	text-align: left;
 	font-size: 12pt;
 }
 
 .childcare {
-	font-family: 'Libre Baskerville', sans-serif;
+	font-family: 'Libre Baskerville', serif;
 	text-align: left;
 	font-size: 12pt;
 	width: 1000px;
