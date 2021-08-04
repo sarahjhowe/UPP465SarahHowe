@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title>Chicago Early Learning: Needs & Accessibility</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap" rel="stylesheet">
+
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+<script src="js/leaflet-providers.js"></script>
+</head>
+
+<body>
+
+<div class = "intro">
+<h1>Chicago Early Learning: Needs & Accessibility</h1>
+<p>This is a resource for parents and guardians in Chicago to access their family needs and connect their children to mixed modes of education.</p>
+</div>
+
+<div>
+<p>Access to both indoor and outdoor modes of education are absolutely crucial to infant and toddler cognitive development. In Chicago's Early Learning programs, prior to kindergarten, educators are equipped to meet the educational needs of each student to prepare them to enter Chicago's school districts. Further, these programs provide physical and mental health assessments, parent and guardian trainings, and safe, CDC-advised classroom environments. For parents experiencing adversity, Chicago's Early Learning programs, such as Every Child Ready Chicago, can provide necessary supports for parents.</p>
+<p>It is just as important for young minds to be cognitively engaged in Chicago's outdoor environments as within the classroom. According to Harvard Medical School's health publications, infants, toddlers, and preschool children require outdoor education to fully prepare them for adolescence. Outdoor education, as simple as engaging with a neighborhood playground, helps children in six crucial ways: access to sunshine (Vitamin D), exercise, executive function, risk taking, socialization, and appreciation of nature.</p>
+
+</div>
+
+<div id = "map">
+
+<script>
+
+var map = L.map('map').setView([41.86, -87.66,], 13);
+var Stamen_TonerLite = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.{ext}', {
+        attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> 
+        subdomains: 'abcd',
+        minZoom: 0,
+        maxZoom: 20,
+        ext: 'png'
+}).addTo(map);
+var marker = L.marker([41.86,-87.66],).addTo(map).bindPopup("Hideout");
+var polygon = L.polygon([[41.22,-87.22],[41.50,-87.50],[41.80,-87.08]],),{ color:'purple',fillColor:'green', fillOpacity:.15,}).addTo(map);
+var line = L.polyline([[41.86,87.66], [41.33,87.33], [41.70,87.12]],).addTo(mymap);
+var circle = L.circle([41.69,87.69],).addTo(mymap);
+
+</script>
+
+</body>
+
+</html>
