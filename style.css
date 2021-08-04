@@ -1,25 +1,25 @@
 .intro {
 	width: 500px;
-	margin: auto;
+	margin: left;
 } 
 
 .intro h1 {
-	font-family: 'Nunito', sans-serif;
-	text-align: center;
-	font-size: 20pt;
+	font-family: 'Lato', sans-serif;
+	text-align: left;
+	font-size: 40pt;
 } 
 
 .intro h3 {
-	font-family: 'Nunito', sans-serif;
-	text-align: center;
-	font-size: 14pt;
+	font-family: 'Lato', sans-serif;
+	text-align: left;
+	font-size: 12pt;
 }
 
 .childcare {
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Lato', sans-serif;
 	text-align: left;
-	font-size: 11pt;
-	width: 800px;
+	font-size: 12pt;
+	width: 1000px;
 	margin: auto;
 }
 
